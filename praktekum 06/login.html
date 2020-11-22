@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="Slogin.css">
+</head>
+<body>
+    <div class="warpper fl">
+        <div class="main">
+            <div class="head">
+<p>
+LOGIN SANTRI ONLEN</p>
+</div>
+<div class="form fl">
+                <form method="POST">
+                    <p class="name">
+username* :</p>
+<p>
+<input type="text"  placeholder="username" class="name-inp" id="username" name="username"></p>
+<p class="name">
+
+password* :</p>
+<p>
+<input type="password"  placeholder="Password" class="pass" id="password" name="password">
+                                                </p>
+<p>
+<input type="submit" name="sb" value="SUBMIT" class="sub" onclick="return login()"></p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<div class='footer'>
+    <p>Copyright 2020 muhammad kemal sholichin</a></p>
+</div>
+</form>
+<script type="text/javascript">
+	function login() {
+		username = document.getElementById("username").value;
+		password = document.getElementById("password").value;
+
+		if (username == "" || password == "") {
+			alert("Username / Password Tidak Boleh Kosong");
+			return false;
+		}
+		else if (password.length < 6) {
+			alert("Password Kurang dari 6");
+			return false;
+		}
+		else if (username == "SANTRIONLEN" && password == "123456789") {
+			window.location = "dashboard.html";
+			return false;
+		}else{
+			alert("Username / Password anda salah");
+		}
+	}
+</script>
+</body>
+</html>
