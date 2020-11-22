@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>IMAGE PICKER</title></head><body style="margin: 200px"> 
+                	<center>	
+                    <select onchange="gantigambar();" id="listgambar">	
+                                <option value="https://static.wikia.nocookie.net/mudae/images/4/44/Mudae_Nanatsu_no_Taizai_Logo.png/revision/latest?cb=20200302213211">PILIH KARAKTER</option>		
+                                    <option value="https://images5.alphacoders.com/105/thumb-1920-1052602.png">MELIODAS</option>		
+                                        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2ZZsTvrFmRcXLAGYK5gaYmXwOKMgHsGJmA&usqp=CAU">BAN</option>	
+                                                <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJqVZRhPVxXwiI3VtkioQcsj8ePsuELoaP_w&usqp=CAU">ESCANOR</option>	
+                                                        <option value="https://i.pinimg.com/564x/7e/7d/7a/7e7d7a1b2d446427fc59f48993072a8c.jpg">KING</option>		
+                                                            <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBVhC1E9_VaLAqprhVHMd7Upt9BFZP2zxFig&usqp=CAU">MERLIN</option>		
+                                                                <option value="https://i.pinimg.com/originals/ae/1f/b4/ae1fb4bd857bc9e751d24df7bb8bb878.jpg">ELIZABET</option>	
+                                                                </select>
+                                                            	</center>	
+                                                                    <br/> 
+                                                                    	<img url ="https://static.wikia.nocookie.net/mudae/images/4/44/Mudae_Nanatsu_no_Taizai_Logo.png/revision/latest?cb=20200302213211"style="width: 100%" id="gambar">
+                                                             </body>
+                                                             <script type="text/javascript">
+                                                             	function gantigambar()
+                                                                  {		let gambar = document.getElementById("listgambar") .value;
+                                                                  		document.getElementById("gambar").src = gambar;	
+                                                                 	alert("Ini Gambar " + gambar);	}
+                                                                 </script>
+                                                                 </html>
